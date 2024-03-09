@@ -1,24 +1,26 @@
-# list of items sold in the cafe
+# List of items sold in the cafe
 menu = ["coffee", "croissant", "cake", "juice"]
 
-# stock value for each item on the menu
+# Stock value for each item on the menu
 stock = {"coffee": 50,
          "croissant": 30,
          "cake": 30,
          "juice": 30
          }
 
-# price for each item on the menu
+# Price for each item on the menu
 price = {"coffee": 3,
          "croissant": 4,
          "cake": 5,
          "juice": 3
          }
 
-total_stock = 0 # initialising the variable to use inside the for loop
+# Initialize variable for total stock worth
+total_stock = 0
 
-# for loop to loop through the menu items and multiply the stock values by the price values
+# Loop through the menu items and calculate the total stock worth
 for item in menu: 
     total_stock += stock[item] * price[item]
-    
-print("The total stock worth in the cafe = " + str(total_stock))
+
+# Display the total stock worth in the cafe
+print("The total stock worth in the cafe = $" + str(total_stock))
